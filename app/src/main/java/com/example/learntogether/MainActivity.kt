@@ -78,9 +78,8 @@ fun ImageImplementation(title: String, text1: String,text2: String,modifier: Mod
             painter = image,
             contentDescription = null,
             modifier = Modifier
-                .fillMaxWidth()
-                .height(100.dp),
-            contentScale = ContentScale.Crop,
+                .fillMaxWidth(),
+            contentScale = ContentScale.Fit,
         )
         FirstParagraphe(title = title)
         SecondParagraphe(text= text1)
